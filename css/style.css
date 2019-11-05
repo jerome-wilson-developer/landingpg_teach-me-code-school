@@ -1,0 +1,74 @@
+/*-------------
+  MOBILE FIRST
+--------------*/
+html{
+    background: #eee;
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+}
+img{
+    width: 100%;
+    display: block;
+}
+p{
+    color: #4a525f;
+    margin: 0;
+}
+#logo p{
+    display: block;
+    position: absolute;
+    top: 1%;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;       
+}
+
+/* TOP MENU */
+ul{
+    width: 100%;
+    padding: 0;
+    list-style: none!important;
+}
+li{
+    text-align: center;
+    padding: 5px;
+    background: #4a525f;
+    font-style: italic;
+    border-bottom: 2px solid white;
+}
+li, li a{
+    text-decoration: none;
+    color: white;
+}
+li:hover, li a:hover{
+    background: #393535;
+}
+/* TOP MENU END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
