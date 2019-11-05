@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+    <title>Teach Me Code School</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial scale="1.">
+    <!-- NORMALIZE.CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- CUSTOM CSS -->
+<!--    <link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <!-- HTML5 SHIV -->
+    <script src="js/html5shiv.js"></script>
+    <!-- PICTUREFILL -->
+    <script src="js/picturefill.min.js" async></script>
+    
+<style> 
+    /*CSS STYLING FOR GLOBAL ELEMENTS*/
+    html{
+        background: #eee;
+        /* color: #000000!important; */
+    }
+    body{
+        margin: 0 auto;
+        width: 100%;
+        background: white;
+        /* color: #000000!important; */
+    }
+    img{
+        width:100%;
+        display: block;
+    }
+    p{
+        color: #4a525f;
+        margin: 0;
+    }
+    #logo p{
+        display: block;
+        position: absolute;
+        top: 1%;
+        color: white;
+        font-size: 2.2em;
+        font-style: italic;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    /* --------------------------------------
+      THE BEGINNING OF 'MOBILE 1ST' STYLING
+    --------------------------------------- */    
+    ul{/*TOP MENU STYLING*/
+        width: 100%;
+        padding: 0px;
+        list-style: none!important;
+    }
+    li{
+        text-align: center;
+        padding: 5px;
+        background: #4a525f;
+        font-style: italic;
+        border-bottom: 2px solid white;
+    }
+    li, li a{
+        text-decoration:  none;
+        color: white;
+    }
+    li:hover, li a:hover{
+        background: #393535;
+    }    
+       
+    header{/*BEGINNING OF HEADER STYLING*/ 
+        position: relative;
+    }
+    header p{
+        position: absolute;
+        bottom: 60%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.6em;
+    }
+    #apply-btn{
+        bottom: 50%;
+    }
+    #apply-btn a{
+        padding: 2px;
+        text-decoration: none;
+        background: #8393ca;
+        color: white;
+        border-radius: 5px;
+    }
+    #apply-btn a:hover{
+        background: #3e486a;
+    }/*END OF HEADER STYLING*/    
+    
+    
+    .row1-1{/*BEGINNING OF ROW1 STYLING*/
+        width: 100%;
+        float: left;
+        margin-bottom: 2%;
+    }
+    .buttons{
+        width: 30%;
+        float: left;
+        padding-left: 2.5%;
+        text-align: center;
+    }
+    .buttons a{
+        text-decoration: none;
+    }
+    .row1-2{
+        width: 100%;
+        background: #e0e0e8;
+        font-size: 1.6em;
+        text-align: center;
+        padding: 4% 0;
+        display: inline-block;
+    }/*END OF ROW1 STYLING*/    
+    
+    
+    .row2{/*BEGINNING OF ROW2 STYLING*/
+        background: #a864a8;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .row2 img{
+        width: 40%;
+        display: inline-block;
+    }
+    .row2 p{
+        font-size: 1.4em;
+        padding: 3% 0;
+        color: white;
+    }/*END OF ROW2 STYLING*/   
+    
+    
+    .row3-1{/*BEGINNING OF ROW3 STYLING*/
+        display: inline-block;
+        width: 100%;
+        background: #e0e0e8;
+        font-size: 1.6em;
+        text-align: center;
+        padding: 4% 0;
+    }
+    span a{
+        text-decoration: underline;
+        color: #ec008c;
+    }
+    footer p{
+        text-align: center;
+        padding-bottom: 2%;
+        background: white;
+    }/*END OF ROW3 STYLING*/    
+    /* --------------------------
+      END OF MOBILE 1ST STYLING
+    --------------------------- */
+    
+    
+    /* --------------------------------------
+      DEVICES > 600PX
+    --------------------------------------- */    
+    @media screen and (min-width: 600px){       
+    
+    /*TOP MENU STYLING*/
+    header ul{
+        position: absolute;
+        top: 8%;
+        text-align: center;
+        background: white;
+    }
+    header li, header li a{
+        display: inline-block;
+        background: transparent;
+        border-bottom: none;
+        color: #4a525f;
+        padding: 5px;
+    }
+    header li{
+        border-right: 1px solid #4a525f;
+    }
+    header li:last-child{
+        border-right: none;
+    }
+    header li:hover, header li a:hover{
+        background: #d9cccc;
+    }
+    /*END TOP MENU STYLING*/
+    
+    header p{
+        bottom: 40%;
+        font-size: 2em;
+    }
+    #apply-btn{
+        bottom: 30%;
+    }
+    
+    .row1-1{
+        width: 50%;
+        margin-top: 2%;
+    }
+    .row1-2{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .row1-2 p{
+        max-width: 60%;
+    }
+    .row2 p{
+        font-size: 2em;
+    }
+    .sarah, .tom{
+        width: 50%;
+        float: left;
+        padding-bottom: 2%;
+    }
+    .row3{
+        display: flex;
+    }
+    .row3-1{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .row3-1 p{
+        max-width: 60%;
+    }
+    .row3-2{
+        flex: 1;
+    }
+    
+    
+    /*FOOTER MENU*/
+    footer ul{
+        text-align: center;
+        background: #8393ca;
+        margin: 0;
+    }
+    footer li, footer li a{
+        display: inline-block;
+        
+    }
+    footer li{
+        border-right: 1px solid #4a525f;
+    }
+    footer li:last-child{
+        border-right: none;
+    }
+    footer li:hover, footer li a:hover{
+        background: #3e486a;
+    }
+    footer p{
+        padding-top: 2%;
+        background: #e0e0eb;
+        font-size: 1.2em;
+    }
+    }
+    
+    
+    /* --------------------------------------
+      DEVICES > 900PX
+    --------------------------------------- */    
+    @media screen and (min-width: 900px){
+        body{
+            max-width: 1100px;
+            /* color: #000000!important; */
+            
+        }
+        header ul{
+            max-width: 1100px;
+            background: transparent;
+            text-align: right;
+            top: 1%;
+            right: 2%;
+        }
+        header p{
+            font-size: 2.2em;
+            font-weight: bold;
+            max-width: 1100px;
+        }
+        #logo p{
+            text-align: left;
+            padding-left: 1%;
+        }
+        .row1-1{
+            font-size: 1.2em;
+        }
+        .row1-2, .row2 p, .row3-1{
+            font-size: 2.5em;
+        }
+        footer p{
+            font-size: 1.5em;
+        }
+        
+        
+    }       
+</style>
+</head>    
+    
+<body>    
+    <header>
+        <picture>
+            <source media="(min-width: 1100px)" srcset="images/university-1100.jpg"> 
+            <source media="(min-width: 900px)" srcset="images/university-900.jpg">
+            <img src="images/university-600.jpg" alt="university image">
+        </picture>        
+        
+        <div id="logo">
+            <p>Teach Me Code School
+                <br/>We provide beginner courses at 3 beginner levels
+            </p>
+        </div>        
+            <p>We provide beginner courses in 3 beginner levels</p>        
+            <p id="apply-btn"><a href="">See Our Courses</a></p>
+                    
+        <nav>
+            <ul>
+                <li><a href="">Apply here</a></li>
+                <li><a href="">Course descriptions</a></li>
+                <li><a href="">Student log-In</a></li>
+                <li><a href="">Teacher log-In</a></li>
+            </ul>        
+        </nav>
+    </header>
+    
+    <main>
+        <div class="row1-1">
+                    <div class="buttons">
+                        <img src="images/magnifying.png"/>
+                        <h3 style="margin-bottom:10px;">Build Your Porfolio</h3>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;">Build a portfolio of websites and web apps to use on your job interviews and freelancing.
+                        </p>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;">Prove your new skills to employers and customers to market your skills to.
+                        </p>   
+                    </div>
+                <div>
+                    <div class="buttons">
+                        <img src="images/arrow.png"/>
+                        <h4>Languages We Teach</h4>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;">The 3 primary languages we teach are html5, css3, and javascript. Git and the command line is also included. We use websites and web apps to teach the basics of logic, syntax, and data structures for those 3 languages.</p>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;">          After you begin to learn the basics of front-end development, we begin to focus on back-end languages like PHP, MySQL, and Python.              
+                        </p>
+                    </div>
+                </div>        
+                <div class="buttons"> 
+                    <div>
+                        <img src="images/calendar.png"/>
+                        <h3 style="margin-bottom:10px;">Flexible Schedules</h3>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;">Our flexible schedules to learn code while maintains your home-life, work-life, and play-life. As long as you have an internet connection we are at your disposal.                       
+                        </p>
+                        <p style="text-align:left; margin:10px 10px; padding:10px 10px;"> B1: The basics of logic, syntax, and data structures. B2: Practice with Projects over and over and over. B3: Build 5 websites (corporate clones), 3 web apps (forms, etc), and 3 games. 
+                        </p>
+                    </div>
+                </div>  
+        </div>           
+        <div class="row1-2">
+            <h3>Why take your beginner courses from "Teach Me Code School"</h3>
+        </div>
+        
+
+        <div class="row2">
+            <h5>Website developers share one of the fastest growing professions in the economy. *Website development is projected to grow around 27% by 2024.</h5>
+            <p>* Bureau of Labor Statistics</p>
+            <p>What do our former students have to say</p>
+            <div class="tom">
+                <img src="images/man.png">
+                <p>Tom's Story</p>
+            </div>
+            <div class="sarah">
+                <img src="images/woman.png">
+                <p>Sarah's Story</p>
+            </div>
+        </div> 
+        
+        <div class="row3">
+            <div class="row3-1">
+                <h5>Website developers share one of the fastest growing professions in the economy.                    
+                </h5>
+                <p>* Website development is projected to grow around 27% by 2024.</p>
+            </div> 
+            <div class="row3-2">
+                <img src="images/volleyball.jpg">
+            </div>
+        </div>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="">COURSE FINDER</a></li>               
+                    <li><a href="">WHY US?</a></li>
+                    <li><a href="">HOW TO APPLY</a></li>
+                </ul>
+                    <p>&copy; MyCollege2015</p>
+            </nav>
+        </footer>
+    </main>   
+</body>
+</html>
